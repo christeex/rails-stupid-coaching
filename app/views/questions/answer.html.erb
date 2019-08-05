@@ -1,0 +1,16 @@
+<!-- <form action="" method="get">
+  <input type="text" name="question" placeholder="what do you want to say to the coach?">
+  <input type="submit">
+</form> -->
+<div class="container">
+  <p><%= params[:question] %></p>
+  <p>-You</p>
+</div>
+
+<div class="container">
+  <p><%= @answer %></p>
+  <p>-Your coach</p>
+</div>
+
+
+<%= link_to "Ask a new question", ask_path %>
